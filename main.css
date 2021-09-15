@@ -19,3 +19,11 @@ h1 {
     color: crimson;
     position: relative;
 }
+h1::before {
+    content: attr(data-text);
+    text-shadow: 0px 0px 20px crimson;
+    filter: blur(10px) brightness(0);
+    position: absolute;
+    animation: NeonAnim 2s linear forwards;
+    animation-delay: 1s;
+}
